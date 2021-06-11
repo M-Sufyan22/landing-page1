@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2584 Design</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body id="webBody" onload="bodyload()">
+
+    <!-- preLoader -->
+    <div class="loader-container" id="pre-loader">
+        <div class="loader">
+            <img src="assets/images/preloader.gif" alt="Loading....">
+            <h1>Loading.....</h1>
+        </div>
+    </div>
+
+    <!-- Top Header / NavBar -->
+    <header>
+        <nav class="nav" id="home">
+            <div class="logo">
+                2584 Design
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars hmbrg-icon"></i>
+            </label>
+            <ul class="mb-menu-wrapper">
+                <li><a class="active nv-t" href="#home">Home</a></li>
+                <li><a class="nv-t" href="#priceColumn">Cennik</a></li>
+                <li><a class="nv-t" href="#contact">Kontakt</a></li>
+                <li><a class="nv-t" href="#faqs">FAQs</a></li>
+                <li><a class="nv-t" href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+        <div class="bussines-notif">
+            <p>business starts at 17 june</p>
+        </div>
+    </header>
+
+    <!-- Section 1 -->
+    <section class="cotainer1">
+
+        <div class="heading">
+            <div>
+                <h1>Abonent 2584 Design</h1>
+            </div>
+        </div>
+        <div class="text-top2">
+            <div>Abonent jest obejenty nieograniczoną liczbą zleceń, nieograniczoną liczbą wersji oraz modifikacji -
+            </div>
+            <div>które są objęte 30-dniową gwarancją satysfakcji.</div>
+        </div>
+
+        <div class="price-comparison" id="priceColumn">
+            <div class="price-column">
+                <div class="price-header">
+                    <div class="price">
+                        <div class="dollar-sign">zł.</div>
+                        2584
+                        <div class="per-month">/Mies.</div>
+                    </div>
+                    <div class="plan-name">Dla firm</div>
+                </div>
+                <div class="divider"></div>
+                <div class="feature">
+                    <img src="assets/images/check-circle.svg"> Projekty logo
+                </div>
+                <div class="feature">
+                    <img src="assets/images/check-circle.svg"> Projekty stron docelowych
+                </div>
+                <div class="feature">
+                    <img src="assets/images/check-circle.svg"> Grafiki do mediów społecznościowych
+                </div>
+                <div class="feature">
+                    <img src="assets/images/check-circle.svg"> Infografiki
+                </div>
+                <div class="feature">
+                    <img src="assets/images/check-circle.svg"> Projektowania reklamowe
+                </div>
+                <div class="feature">
+                    <img src="assets/images/check-circle.svg"> Design opakowań i etiketów
+                </div>
+                <div class="feature">
+                    <img src="assets/images/check-circle.svg"> Grafiki do przedmiotów promocyjnych
+                </div>
+                <div class="feature">
+                    <img src="assets/images/check-circle.svg"> Gif'y
+                </div>
+                <button class="cta">Zaczynajmy!</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <section class="form-sec">
+        <!-- <div class="success-msg-box-wrapper">
+            <div class="success-msg-box">
+
+                <h4>Thank you For Contacting Us! &nbsp;<i class="fa fa-check-circle gr" aria-hidden="true"></i></h4>
+
+                <i class="fa fa-times cl" aria-hidden="true"></i>
+            </div>
+        </div> -->
+        <div class="contact-container" id="contact">
+            <div class="text">
+                skontaktuj sie z nami
+            </div>
+            <form action="" id="ct-form">
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Imię</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required=" ">
+                        <div class="underline"></div>
+                        <label for="">Nazwisko</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Email </label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required=" ">
+                        <div class="underline"></div>
+                        <label for="">Numer telefonu</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data textarea">
+                        <textarea rows="8" cols="80" required></textarea>
+                        <br />
+                        <div class="underline"></div>
+                        <label for="">Wiadomość</label>
+                        <br />
+                    </div>
+                </div>
+                <div class="form-row submit-btn">
+                    <div class="input-data">
+                        <div class="inner"></div>
+                        <input type="submit" value="wyślij">
+                    </div>
+                </div>
+
+            </form>
+            <div class="sucMsg">
+                <h4>Thank you For Contacting Us!</h4>
+            </div>
+        </div>
+    </section>
+    <!-- Slider main container -->
+    <!-- Swiper -->
+
+    <div class="slider-container">
+        <h2 class="faq-title">Our Works</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-item-title">
+                        <h3>Web Design</h3>
+                    </div>
+                    <div class="slide-item-img"><img src="assets/images/ourWork1.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-item-title">
+                        <h3>Graphich Design</h3>
+                    </div>
+                    <div class="slide-item-img"><img src="assets/images/ourWork2.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-item-title">
+                        <h3>Mobile Apps</h3>
+                    </div>
+                    <div class="slide-item-img"><img src="assets/images/ourWork3.jpg" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-item-title">
+                        <h3>Web</h3>
+                    </div>
+                    <div class="slide-item-img"><img src="assets/images/ourWork1.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-item-title">
+                        <h3>Graphic</h3>
+                    </div>
+                    <div class="slide-item-img"><img src="assets/images/ourWork2.jpeg" alt=""></div>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+
+    <!-- Faqs -->
+    <section class="faq-sec" id="faqs">
+        <h2 class="faq-title">FAQs</h2>
+        <div class="faq-wrapper">
+            <div class="faq-quetion">
+                <h3>Jaki jest czas realizacji?</h3>
+                <i class="fa fa-chevron-right"></i>
+
+            </div>
+            <div class="faq-answer">
+                <p>Średnio użytkownicy, otrzymują pierwszą koncepcję lub następną wersję w ciągu 24-48h. Złożoność Twojego żądania i/lub liczba aktywnych żądań aktualnie w Twojej kolejce może wpłynąć na czas dostawy.
+                </p>
+            </div>
+        </div>
+        <div class="faq-wrapper">
+            <div class="faq-quetion">
+                <h3>Co tak naprawdę oznacza „nieograniczony”?</h3>
+                <i class="fa fa-chevron-right"></i>
+
+            </div>
+            <div class="faq-answer">
+                <p>Dzięki subskrypcji 2584 Design możesz zamówić dowolną liczbę grafik, a nasi projektanci będą pracować nad prośbami w Twojej kolejce każdego dnia roboczego. Jeśli nie zrobimy tego dobrze za pierwszym razem, poprawki też są nieograniczone.
+                </p>
+            </div>
+        </div>
+        <div class="faq-wrapper">
+            <div class="faq-quetion">
+                <h3>Czy możecie zaprojektować _____?</h3>
+                <i class="fa fa-chevron-right"></i>
+
+            </div>
+            <div class="faq-answer">
+                <p>Jeśli masz potrzebę projektowania graficznego, najpierw zadaj sobie pytanie: Czy mogę rozsądnie wyjaśnić lub pokazać to, czego chcę? Jeśli odpowiedź brzmi tak – fantastycznie! Nasz zakres usług jest szeroki, ale mocno zakotwiczony w projektowaniu
+                    graficznym i ilustracjach (na razie). Jeśli potrzebujesz ruchomej grafiki, copywritingu lub latte, to niestety ale nie bedziemy mogli tego zrobić
+                </p>
+            </div>
+        </div>
+        <div class="faq-wrapper">
+            <div class="faq-quetion">
+                <h3>Czy są jakieś ukryte opłaty?
+                </h3>
+                <i class="fa fa-chevron-right"></i>
+
+            </div>
+            <div class="faq-answer">
+                <p>Żadnych ukrytych opłat. Cena subskrypcji jest dokładnie taka, jaką płacisz miesięcznie. Wszystkie podatki i opłaty są wliczone w tę cenę.
+
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Javascript src  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="assets/js/swiperSlider.js"></script>
+    <!-- app JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
