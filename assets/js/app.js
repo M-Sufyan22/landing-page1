@@ -27,7 +27,15 @@ const controlSideBar = () => {
 const bodyload = () => {
     setTimeout(() => {
         document.getElementById("pre-loader").style.display = "none";
+
     }, 300)
+    if (window.scrollY > window.innerHeight / 1.7) {
+        formSec.classList.add('changedFormbg');
+        document.body.classList.add("bodych");
+    } else {
+        formSec.classList.remove('changedFormbg');
+        document.body.classList.remove("bodych");
+    }
 }
 
 
