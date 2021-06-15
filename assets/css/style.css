@@ -813,8 +813,9 @@ footer ul {
     background-position: 100% 100%;
 }
 
-.footer-logo {
+.footer-logo a {
     margin-bottom: 30px;
+    color: #03c8a8;
 }
 
 .footer-logo img {
