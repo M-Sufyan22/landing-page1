@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+    <meta name="theme-color" content="#03c8a8">
     <title>2584 Design</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.min.css" />
@@ -46,7 +49,7 @@
         </div>
     </header>
 
-    <!-- Section 1 -->
+    <!-- Hero sec 1 -->
     <section class="cotainer1 mt-0">
         <div class="heading">
             <div>
@@ -100,71 +103,10 @@
 
     </section>
 
-    <!-- Footer -->
-    <section class="form-sec">
-        <!-- <div class="success-msg-box-wrapper">
-            <div class="success-msg-box">
 
-                <h4>Thank you For Contacting Us! &nbsp;<i class="fa fa-check-circle gr" aria-hidden="true"></i></h4>
 
-                <i class="fa fa-times cl" aria-hidden="true"></i>
-            </div>
-        </div> -->
-        <div class="contact-container" id="contact">
-            <div class="text">
-                skontaktuj sie z nami
-            </div>
-            <form action="" id="ct-form">
-                <div class="form-row">
-                    <div class="input-data">
-                        <input type="text" required>
-                        <div class="underline"></div>
-                        <label for="">Imię</label>
-                    </div>
-                    <div class="input-data">
-                        <input type="text" required=" ">
-                        <div class="underline"></div>
-                        <label for="">Nazwisko</label>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="input-data">
-                        <input type="text" required>
-                        <div class="underline"></div>
-                        <label for="">Email </label>
-                    </div>
-                    <div class="input-data">
-                        <input type="text" required=" ">
-                        <div class="underline"></div>
-                        <label for="">Numer telefonu</label>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="input-data textarea">
-                        <textarea rows="8" cols="80" required></textarea>
-                        <br />
-                        <div class="underline"></div>
-                        <label for="">Wiadomość</label>
-                        <br />
-                    </div>
-                </div>
-                <div class="form-row submit-btn">
-                    <div class="input-data">
-                        <div class="inner"></div>
-                        <input type="submit" value="wyślij">
-                    </div>
-                </div>
-
-            </form>
-            <div class="sucMsg">
-                <h4>Thank you For Contacting Us!</h4>
-            </div>
-        </div>
-    </section>
-    <!-- Slider main container -->
-    <!-- Swiper -->
-
-    <section class="portfolio-sec" id="portfolio">
+    <!-- Portfolio -->
+    <section class="portfolio-sec mt-3" id="portfolio">
         <h2 class="faq-title">Our Works</h2>
         <div class="slider-container">
 
@@ -174,31 +116,31 @@
                         <div class="slide-item-title">
                             <h3>Web Design</h3>
                         </div>
-                        <div class="slide-item-img"><img src="assets/images/ourWork1.png" alt=""></div>
+                        <div class="slide-item-img" onclick="openModal();currentSlide(1)"><img src="assets/images/portfolio1.jpg" alt="" /></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="slide-item-title">
                             <h3>Graphich Design</h3>
                         </div>
-                        <div class="slide-item-img"><img src="assets/images/ourWork2.jpeg" alt=""></div>
+                        <div class="slide-item-img" onclick="openModal();currentSlide(2)"><img src="assets/images/portfolio-2.webp" alt="" /></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="slide-item-title">
                             <h3>Mobile Apps</h3>
                         </div>
-                        <div class="slide-item-img"><img src="assets/images/ourWork3.jpg" alt=""></div>
+                        <div class="slide-item-img" onclick="openModal();currentSlide(3)"><img src="assets/images/satrtup123.jpg" alt="" /></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="slide-item-title">
                             <h3>Web</h3>
                         </div>
-                        <div class="slide-item-img"><img src="assets/images/ourWork1.png" alt=""></div>
+                        <div class="slide-item-img" onclick="openModal();currentSlide(4)"><img src="assets/images/portfolio1.jpg" alt="" /></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="slide-item-title">
                             <h3>Graphic</h3>
                         </div>
-                        <div class="slide-item-img"><img src="assets/images/ourWork2.jpeg" alt=""></div>
+                        <div class="slide-item-img" onclick="openModal();currentSlide(5)"><img src="assets/images/satrtup123.jpg" alt=""></div>
                     </div>
 
                 </div>
@@ -210,9 +152,56 @@
             <div class="swiper-button-next-unique"></div>
             <div class="swiper-button-prev-unique"></div>
         </div>
+        <a class="text-center text-white d-block ml-auto mr-auto lead mb-3" href="#contact">See Our More Works</a>
     </section>
 
-    <div id="google_translate_element"></div>
+    <!-- Portfolio Model Box -->
+    <div id="myModal" class="modal-for-portfolio">
+        <span class="model-close-btn cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content-wrap">
+            <div class="model-main-img-box">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="assets/images/portfolio1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="assets/images/portfolio-2.webp" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="assets/images/satrtup123.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="assets/images/portfolio1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="assets/images/satrtup123.jpg" style="width:100%">
+                </div>
+                <a class="model-prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="model-next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="light-box-image-wrapper">
+                <div class="light-box-image-col">
+                    <img class="demo cursor" src="assets/images/portfolio1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+                </div>
+                <div class="light-box-image-col">
+                    <img class="demo cursor" src="assets/images/portfolio-2.webp" style="width:100%" onclick="currentSlide(2)" alt="">
+                </div>
+                <div class="light-box-image-col">
+                    <img class="demo cursor" src="assets/images/satrtup123.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+                </div>
+                <div class="light-box-image-col">
+                    <img class="demo cursor" src="assets/images/portfolio1.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+                </div>
+                <div class="light-box-image-col">
+                    <img class="demo cursor" src="assets/images/satrtup123.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Faqs -->
     <section class="faq-sec" id="faqs">
@@ -267,6 +256,74 @@
 
     </section>
 
+    <!-- contact us -->
+    <section class="form-sec">
+        <!-- <div class="success-msg-box-wrapper">
+            <div class="success-msg-box">
+
+                <h4>Thank you For Contacting Us! &nbsp;<i class="fa fa-check-circle gr" aria-hidden="true"></i></h4>
+
+                <i class="fa fa-times cl" aria-hidden="true"></i>
+            </div>
+        </div> -->
+        <div class="contact-container" id="contact">
+            <div class="text">
+                skontaktuj sie z nami
+            </div>
+            <form action="" id="ct-form">
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Imię</label>
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required=" ">
+                        <div class="underline"></div>
+                        <label for="">Nazwisko</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Email </label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required=" ">
+                        <div class="underline"></div>
+                        <label for="">Numer telefonu</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data textarea">
+                        <textarea rows="8" cols="80" required></textarea>
+                        <br />
+                        <div class="underline"></div>
+                        <label for="">Wiadomość</label>
+                        <br />
+                    </div>
+                </div>
+                <div class="form-row submit-btn">
+                    <div class="input-data">
+                        <div class="inner"></div>
+                        <input type="submit" value="wyślij">
+                    </div>
+                </div>
+
+            </form>
+            <div class="sucMsg">
+                <h4>Thank you For Contacting Us!</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer-section">
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
