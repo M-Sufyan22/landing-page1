@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -30,7 +30,7 @@
     <header>
         <nav class="nav" id="home">
             <div class="logo">
-                2584 Design
+                <img src="assets/images/logoWhite.png" alt="2584 Design">
             </div>
             <input type="checkbox" id="click">
             <label for="click" class="menu-btn">
@@ -44,9 +44,9 @@
                 <li><a class="nv-t" href="#portfolio">Portfolio</a></li>
             </ul>
         </nav>
-        <div class="bussines-notif">
+        <!-- <div class="bussines-notif">
             <p>business starts at 17 june</p>
-        </div>
+        </div> -->
     </header>
 
     <!-- Hero sec 1 -->
@@ -97,7 +97,7 @@
                 <div class="feature">
                     <img src="assets/images/check-circle.svg"> Gif'y
                 </div>
-                <button class="cta">Zaczynajmy!</button>
+                <a href="mailto:contact@2584design.com" class="cta">Zamów przez E-mail!</a>
             </div>
         </div>
 
@@ -106,7 +106,7 @@
 
 
     <!-- Portfolio -->
-    <section class="portfolio-sec mt-3" id="portfolio">
+    <section class="portfolio-sec mt-5" id="portfolio">
         <h2 class="faq-title">Our Works</h2>
         <div class="slider-container">
 
@@ -114,35 +114,28 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="slide-item-title">
+                            <h3>Web</h3>
+                        </div>
+                        <div class="slide-item-img" onclick="openModal();currentSlide(1)"><img src="assets/images/portfolio4.gif" alt="" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-item-title">
                             <h3>Web Design</h3>
                         </div>
-                        <div class="slide-item-img" onclick="openModal();currentSlide(1)"><img src="assets/images/portfolio1.jpg" alt="" /></div>
+                        <div class="slide-item-img" onclick="openModal();currentSlide(2)"><img src="assets/images/portfolio1.jpg" alt="" /></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="slide-item-title">
                             <h3>Graphich Design</h3>
                         </div>
-                        <div class="slide-item-img" onclick="openModal();currentSlide(2)"><img src="assets/images/portfolio-2.webp" alt="" /></div>
+                        <div class="slide-item-img" onclick="openModal();currentSlide(3)"><img src="assets/images/portfolio-2.webp" alt="" /></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="slide-item-title">
                             <h3>Mobile Apps</h3>
                         </div>
-                        <div class="slide-item-img" onclick="openModal();currentSlide(3)"><img src="assets/images/satrtup123.jpg" alt="" /></div>
+                        <div class="slide-item-img" onclick="openModal();currentSlide(4)"><img src="assets/images/satrtup123.jpg" alt="" /></div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="slide-item-title">
-                            <h3>Web</h3>
-                        </div>
-                        <div class="slide-item-img" onclick="openModal();currentSlide(4)"><img src="assets/images/portfolio1.jpg" alt="" /></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-item-title">
-                            <h3>Graphic</h3>
-                        </div>
-                        <div class="slide-item-img" onclick="openModal();currentSlide(5)"><img src="assets/images/satrtup123.jpg" alt=""></div>
-                    </div>
-
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -152,7 +145,7 @@
             <div class="swiper-button-next-unique"></div>
             <div class="swiper-button-prev-unique"></div>
         </div>
-        <a class="text-center text-white d-block ml-auto mr-auto lead mb-3" href="#contact">See Our More Works</a>
+        <a class="text-center text-white d-block ml-auto mr-auto lead mb-3 mt-3" href="#contact">See Our More Works <br/><i style="color: #03c8a8;" class="fa fa-arrow-down"></i></a>
     </section>
 
     <!-- Portfolio Model Box -->
@@ -161,44 +154,38 @@
         <div class="modal-content-wrap">
             <div class="model-main-img-box">
                 <div class="mySlides">
-                    <div class="numbertext">1 / 5</div>
-                    <img src="assets/images/portfolio1.jpg" style="width:100%">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="assets/images/portfolio4.gif">
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">2 / 5</div>
-                    <img src="assets/images/portfolio-2.webp" style="width:100%">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="assets/images/portfolio1.jpg">
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">3 / 5</div>
-                    <img src="assets/images/satrtup123.jpg" style="width:100%">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="assets/images/portfolio-2.webp">
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">4 / 5</div>
-                    <img src="assets/images/portfolio1.jpg" style="width:100%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">5 / 5</div>
-                    <img src="assets/images/satrtup123.jpg" style="width:100%">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="assets/images/satrtup123.jpg">
                 </div>
                 <a class="model-prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="model-next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <div class="light-box-image-wrapper">
                 <div class="light-box-image-col">
-                    <img class="demo cursor" src="assets/images/portfolio1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+                    <img class="demo cursor" src="assets/images/portfolio4.gif" onclick="currentSlide(1)" alt="">
                 </div>
                 <div class="light-box-image-col">
-                    <img class="demo cursor" src="assets/images/portfolio-2.webp" style="width:100%" onclick="currentSlide(2)" alt="">
+                    <img class="demo cursor" src="assets/images/portfolio1.jpg" onclick="currentSlide(2)" alt="">
                 </div>
                 <div class="light-box-image-col">
-                    <img class="demo cursor" src="assets/images/satrtup123.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+                    <img class="demo cursor" src="assets/images/portfolio-2.webp" onclick="currentSlide(3)" alt="">
                 </div>
                 <div class="light-box-image-col">
-                    <img class="demo cursor" src="assets/images/portfolio1.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+                    <img class="demo cursor" src="assets/images/satrtup123.jpg" onclick="currentSlide(4)" alt="">
                 </div>
-                <div class="light-box-image-col">
-                    <img class="demo cursor" src="assets/images/satrtup123.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
-                </div>
+
             </div>
         </div>
     </div>
@@ -266,7 +253,7 @@
                 <i class="fa fa-times cl" aria-hidden="true"></i>
             </div>
         </div> -->
-        <div class="contact-container" id="contact">
+        <div class="contact-container mt-5" id="contact">
             <div class="text">
                 skontaktuj sie z nami
             </div>
@@ -364,7 +351,8 @@
                         <div class="footer-widget">
                             <div class="footer-logo">
                                 <a href="index.html">
-                                    <h3>2584 Design </h3>
+                                    <!-- <h3>2584 Design </h3> -->
+                                    <img src="assets/images/logoWhite.png" alt="">
                                 </a>
                             </div>
                             <div class="footer-text">
@@ -400,9 +388,9 @@
                             <div class="footer-widget-heading">
                                 <h3>Subskrybuj</h3>
                             </div>
-                            <div class="footer-text mb-25">
+                            <!-- <div class="footer-text mb-25">
                                 <p>dostawaj powiadomienia o naszych promocjach, ofertach...</p>
-                            </div>
+                            </div> -->
                             <div class="subscribe-form">
                                 <form action="">
                                     <div class="input-group">
